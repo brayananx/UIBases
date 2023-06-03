@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script type="module" src="/views/acquisitions.js"></script>
+</head>
+<style>
+    * {
+         margin: 0;
+         padding: 0;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+    .blockMain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form_Busqueda{
+        margin-top: 10%;
+    }
+    .form_Busqueda{
+        text-align: center;
+    }
+    .blockSelect {
+        margin-top: 5%;
+    }
+
+</style>
+
+<body>
+    <div class="chartBlock">
+        <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
+        <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+
+        <!-- <script type="module" src="dimensions.js"></script> -->
+    </div>
+    
+
+    <div class="blockMain">
+        <div class="form_Busqueda">
+            <form method="post" action="/buscar">
+                <h5> Gráficos de la información </h5>
+                <div class="blockSelect">
+                    <select id="slcAutos" >
+                        <option value="null">Selecciona tu automóvil preferido</option>
+                        <option value="Ford Focus"> Ford Focus</option>
+                        <option value="Kia Rio">Kia Rio</option>
+                    </select>
+                    <input class="button" type="submit" name="" value="Filtrar">
+                </div>
+            </form>
+            <div class="testChart">
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
